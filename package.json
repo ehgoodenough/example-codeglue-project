@@ -1,0 +1,30 @@
+{
+  "name": "example-codeglue-project",
+  "version": "1.0.0",
+  "description": "...",
+  "private": true,
+  "contributors": [
+    "Andrew McPherson <@ehgoodenough>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ehgoodenough/example-codeglue-project"
+  },
+  "scripts": {
+    "build": "codeglue --stage=DEVELOPMENT",
+    "start": "codeglue --stage=DEVELOPMENT --mode=SERVER",
+    "zip": "bestzip build.zip builds/web/*"
+  },
+  "dependencies": {
+    "keyb": "^1.2.0",
+    "preact": "^8.2.7",
+    "statgrab": "^1.2.0",
+    "yaafloop": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "bestzip": "^2.1.2",
+    "codeglue": "^1.6.0"
+  }
+}
