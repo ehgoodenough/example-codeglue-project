@@ -1,6 +1,6 @@
 import Preact from "preact"
 
-import model from "models/_____.js"
+import model from "models/.js"
 
 import Frame from "views/components/Frame.view.js"
 import "views/Mount.view.less"

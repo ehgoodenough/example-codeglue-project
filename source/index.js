@@ -5,8 +5,8 @@ if(__STAGE__ === "DEVELOPMENT") {
 
 import Yaafloop from "yaafloop"
 
-import model from "models/_____.js"
-import view from "views/_____.js"
+import model from "models/.js"
+import view from "views/.js"
 
 let loop = new Yaafloop((delta) => {
     model.update(delta)
