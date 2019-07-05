@@ -2,7 +2,7 @@ import Preact from "preact"
 
 import index from "index"
 
-import Frame from "views/components/Frame.view.js"
+import Frame from "views/Frame.view.js"
 import "views/Mount.view.less"
 
 export default class Mount {
