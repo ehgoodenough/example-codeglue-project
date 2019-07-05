@@ -1,14 +1,17 @@
 if(__STAGE__ === "DEVELOPMENT") {
     require("statgrab/do")
-    console.clear()
 }
 
+import Preact from "preact"
 import Yaafloop from "yaafloop"
 
-import model from "models/.js"
-import view from "views/.js"
+import Mount from "views/Mount.view.js"
 
-let loop = new Yaafloop((delta) => {
+import Model from "models/Model.js"
+const model = new Model()
+export default model
+
+let loop = new Yaafloop(function(delta) {
     model.update(delta)
-    view.update(delta)
+    this.mount = Preact.render(<Mount/>, document.body, this.mount)
 })
